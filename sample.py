@@ -4,6 +4,11 @@ content = """
 <html>
 <head>
 <title>My webserver</title>
+cd simplewebserver
+git add -A
+git config user.name "SanthoshRamesh123"
+git config user.email "santhoshramesh052007@gmail.com"
+git commit -m "Success"
 </head>
 <body>
 <h1>Welcome<h1>

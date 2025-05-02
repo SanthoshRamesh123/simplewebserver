@@ -130,8 +130,7 @@ print("Webserver is running at http://127.0.0.1:8000...")
 httpd.serve_forever()
 ```
 ## OUTPUT:
-![alt text](<Screenshot 2025-05-02 180343.png>)
-![alt text](<Screenshot 2025-05-02 180355.png>)
-
+![alt text](<Screenshot 2025-05-02 182412-1.png>)
+![alt text](<Screenshot 2025-05-02 182425.png>)
 ## RESULT:
 The program for implementing simple webserver is executed successfully.

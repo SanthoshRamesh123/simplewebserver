@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date: 02.05.25
+## Date: 27/05/2025
 
 ## AIM:
 To develop a simple webserver to serve html pages and display the list of protocols in TCP/IP Protocol Suite.
@@ -63,7 +63,7 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 </table>
 ```
 ## OUTPUT:
-![alt text](<Screenshot 2025-05-02 182412-1.png>)
-![alt text](<Screenshot 2025-05-02 182425-1.png>)
+![alt text](<Screenshot 2025-05-27 130138-1.png>)
+![p](<Screenshot 2025-05-27 130122.png>)
 ## RESULT:
 The program for implementing simple webserver is executed successfully.

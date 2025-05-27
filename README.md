@@ -63,7 +63,8 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 </table>
 ```
 ## OUTPUT:
-![alt text](<Screenshot 2025-05-27 130138-1.png>)
-![p](<Screenshot 2025-05-27 130122.png>)
+![alt text](<Screenshot 2025-05-27 130138.png>)
+![alt text](<Screenshot 2025-05-27 130122.png>)
+
 ## RESULT:
 The program for implementing simple webserver is executed successfully.

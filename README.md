@@ -37,100 +37,33 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
 ```
-from http.server import HTTPServer, BaseHTTPRequestHandler
+<h2>TCP/IP Protocol Suite</h2>
 
-# HTML content showing differences between TCP and IP in table form
-content = """
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Difference Between TCP and IP</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #eef2f3; padding: 20px; }
-        h1 { color: #2c3e50; }
-        table {
-            width: 90%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #fff;
-        }
-        th, td {
-            border: 1px solid #aaa;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #34495e;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
-    <h1>Difference Between TCP and IP Protocols</h1>
-    <table>
-        <tr>
-            <th>Feature</th>
-            <th>TCP (Transmission Control Protocol)</th>
-            <th>IP (Internet Protocol)</th>
-        </tr>
-        <tr>
-            <td>Layer</td>
-            <td>Transport Layer</td>
-            <td>Internet Layer</td>
-        </tr>
-        <tr>
-            <td>Connection Type</td>
-            <td>Connection-Oriented</td>
-            <td>Connectionless</td>
-        </tr>
-        <tr>
-            <td>Reliability</td>
-            <td>Reliable (ensures delivery, error-checking)</td>
-            <td>Unreliable (no guarantee of delivery)</td>
-        </tr>
-        <tr>
-            <td>Data Transmission</td>
-            <td>Data sent in sequence as a stream</td>
-            <td>Data sent as individual packets</td>
-        </tr>
-        <tr>
-            <td>Error Handling</td>
-            <td>Yes, with acknowledgment and retransmission</td>
-            <td>Basic error checking only</td>
-        </tr>
-        <tr>
-            <td>Speed</td>
-            <td>Slower due to overhead</td>
-            <td>Faster, minimal overhead</td>
-        </tr>
-        <tr>
-            <td>Use Case</td>
-            <td>Web, email, file transfer</td>
-            <td>Routing data across networks</td>
-        </tr>
-    </table>
-</body>
-</html>
-"""
-
-class MyHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("Request received")
-        self.send_response(200)
-        self.send_header('Content-Type', 'text/html; charset=utf-8')
-        self.end_headers()
-        self.wfile.write(content.encode())
-
-server_address = ('', 8000)
-httpd = HTTPServer(server_address, MyHandler)
-print("Webserver is running at http://127.0.0.1:8000...")
-httpd.serve_forever()
+<table border="1">
+    <tr>
+        <th>Layer</th>
+        <th>Protocols</th>
+    </tr>
+    <tr>
+        <td>Application Layer</td>
+        <td>HTTP, HTTPS, FTP, SMTP, DNS, DHCP, Telnet, SNMP</td>
+    </tr>
+    <tr>
+        <td>Transport Layer</td>
+        <td>TCP, UDP</td>
+    </tr>
+    <tr>
+        <td>Internet Layer</td>
+        <td>IP, ICMP, ARP, IGMP</td>
+    </tr>
+    <tr>
+        <td>Network Access Layer</td>
+        <td>Ethernet, Wi-Fi, PPP</td>
+    </tr>
+</table>
 ```
 ## OUTPUT:
 ![alt text](<Screenshot 2025-05-02 182412-1.png>)
-![alt text](<Screenshot 2025-05-02 182425.png>)
+![alt text](<Screenshot 2025-05-02 182425-1.png>)
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
